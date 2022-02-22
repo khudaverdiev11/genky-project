@@ -1,0 +1,287 @@
+.postgrad
+{
+    height: 500px;
+    background: #1e2631;
+    background-image: linear-gradient(0deg, rgb(24, 22, 53) 0%, rgba(30,38,49,1) 36%, rgba(247,247,247,0.1) 100%), url('../img/lifestyle.jpg');
+    background-size: 100% 300%;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1
+    {
+        font-size: 90px;
+    }
+
+    p
+    {
+        font-size: 30px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    p:nth-child(2)
+    {
+        font-style: italic;
+    }
+}
+
+.posts
+{
+    // height: 270vh;
+    background-color: #1e2631;
+    color: white;
+
+    .pbox
+    {
+        height: 420px;
+        width: 95%;
+        border-radius: 60px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 30px;
+        transition: .4s;
+        
+        &:hover
+        {
+            transform: translateY(-10px);
+        }
+
+        .pbox2img
+        {
+            height: 420px;
+            width: 600px;
+            position: absolute;        
+            filter: opacity(.9);
+            filter: brightness(70%);
+
+            object-fit: cover;
+        }
+
+        img
+        {
+            height: 420px;
+            width: 400px;
+            position: absolute;          
+            filter: opacity(.8);
+            filter: brightness(70%);
+        }
+
+        .ptext
+        {
+            position: relative;
+            z-index: 1;
+            margin-top: 210px;
+            padding: 0 30px;
+            width: 100%;
+            height: 200px;
+
+            p
+            {
+                font-weight: 600;
+
+                &:hover
+                {
+                    text-decoration: underline;
+                }
+            }
+
+            button
+            {
+                border: 1px solid white;
+                color: white;
+                padding: 2px 10px;
+                border-radius: 40px;
+                font-size: 14px;
+                background-color: transparent;
+                transition: .4s;
+
+                &:hover
+                {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+
+        .ptext2
+        {
+            margin-top: 250px;
+        }
+
+    }    
+}
+
+.postsub
+{   
+    padding-bottom: 30px;
+            border-bottom: 1px solid #3f4851;
+            margin-bottom: 50px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1
+    {
+        font-size: 70px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        span
+        {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+    }
+
+    .inputBlog
+    {
+        float: right;
+        width: 400px;
+        height: 72px;
+        border: 1px solid #3f4851;
+        background-color: #2a343e;
+        border-radius: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        transition: width .3s;
+
+        input
+        {
+            width: 240px;
+            height: 70px;
+            border-radius: 35px;
+            border: none;
+            outline: none;
+            padding-left: 20px;
+            color: white;
+            font-size: 25px;
+            background-color: transparent;
+        }
+
+        button
+        {
+            position: absolute;
+            right: 10px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 35px;
+            color: white;
+            background-color: #14ae9c;
+            font-size: 18px;
+            transition: .3s;
+
+            &:hover
+            {
+                background-color: #14ae9cc2;
+            }
+        }
+
+        &:hover
+        {
+            width: 420px;
+        }
+        
+    }
+}
+
+.postloadmore
+{
+    // border: 1px solid white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .btnpostloadmore
+    {
+        padding: 18px 45px;
+        border: none;
+        border-radius: 40px;
+        color: white;
+        background-color: #14ae9c;
+        font-size: 25px;
+        font-weight: 600;
+        transition: .3s;
+        &:hover
+        {
+            background-color: #14ae9cc2;
+        }
+    }
+
+    .clickDiv
+    {
+        display: none;
+        width: 100%;
+        height: 370px;
+        border: 1px solid #3f4851;
+        background-color: #2a343e;
+        border-radius: 40px;
+        padding: 30px;
+        transition: .3s;
+        animation: clickDivAnim 1s 1;
+
+        .clickTexts
+        {
+            width: 50%;
+
+            p
+            {
+                width: 70%;
+            }
+
+            button
+            {
+                margin-right: 5px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                font-size: 12px;
+                padding: 4px 8px;
+                background-color: transparent;
+                color: white;
+                border-radius: 20px;
+
+                .fas
+                {
+                    font-size: 12px;
+                }
+
+                
+            }
+
+            .btn-lifestyle
+            {
+                transition: .3s;
+                &:hover{
+                    color: black;
+                    background-color: white;
+                }
+            }
+            
+        }
+
+        &:hover
+        {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+@keyframes clickDivAnim 
+{
+    from {transform: translateY(100px);}
+    to {transform: translateY(0);}
+}
+
+
+
+// background-color: #14ae9c;
+// background-color: #14ae9cc2;

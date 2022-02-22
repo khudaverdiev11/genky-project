@@ -1,0 +1,243 @@
+.main{
+    background-color: #1e2631 !important;
+    .subs{
+        margin-top: 50px;
+    }
+}
+.cover{
+    background-image: url('../img/jessica-felicio-ZhTRdgjwVS4-unsplash.jpg');
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(0.4);
+    -webkit-mask-image: linear-gradient(to top,transparent,rgba(0,0,0,.013)8.1%,rgba(0,0,0,.049)15.5%,rgba(0,0,0,.104)22.5%,rgba(0,0,0,.175)29%,rgba(0,0,0,.259)35.3%,rgba(0,0,0,.352)41.2%,rgba(0,0,0,.45)47.1%,rgba(0,0,0,.55)52.9%,rgba(0,0,0,.648)58.8%,rgba(0,0,0,.741)64.7%,rgba(0,0,0,.825)71%,rgba(0,0,0,.896)77.5%,rgba(0,0,0,.951)84.5%,rgba(0,0,0,.987)91.9%,#000);
+}
+.content{
+    max-width: 1100px;
+    margin-top: -400px;
+    color: white;
+    .headercontent{
+        color: white;
+        font-family: 'EB Garamond', serif;
+        font-style: italic;
+        font-size: 115px;
+        span{
+            font-style: normal;
+        }
+    }
+    .secondcontent{
+        font-size: 30px;
+        font-family: sans-serif;
+        font-style: normal;
+        max-width: 800px;
+    }
+    .btncontent{
+        background-color: #14ae9c;
+        color: white;
+        width: 250px;
+        font-size: 20px;
+        border-radius: 25px;
+        height: 50px;
+        border: none;
+        outline: none;
+        transition: 0.2s;
+        font-weight: 600;
+    }
+    .btncontent:hover{
+        background-color: #0f8f80;
+    }
+}
+.cards-1{
+    max-width: 1460px;
+    color: white;
+   .row{
+        .cardd{
+            position: relative;
+            transition: 0.3s;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            border-radius: 25px;
+            justify-content: flex-end;
+            
+            img{
+                position: relative;
+                object-fit: cover;
+                height: 560px;
+                width: 334px;
+                object-position: center;
+                border-radius: 50px;
+                filter: brightness(0.6);
+            }
+            .content{
+                position: absolute;
+                bottom: 30px;
+                font-weight: bold;
+                padding-left: 30px;
+                font-size: 16px;
+                z-index: 11;
+                
+                .cardcontent{
+                    
+                    font-size: 30px;
+                }
+            }
+        }
+        .cardd:hover{
+            transform: translateY(-5px);
+        }
+   }
+    
+}
+.cards-2{
+    max-width: 1200px;
+    color: white;
+    .rowheader{
+        .colheader{
+            h3{
+                font-family: 'EB Garamond', serif;
+                font-size: 82px;
+                span{
+                   
+                    font-style: italic;
+                }
+            }
+        }
+        .authors{
+            display: flex;
+
+            justify-content: flex-end;
+            align-items: flex-end;
+           .rowauthors{
+               margin-bottom: 25px;
+            --bs-gutter-x: 0 !important; 
+                .author{
+                    transition: 0.3s;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100%;
+                    margin-right: -10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        object-position: center;
+                        object-fit: cover;
+                    }
+                }
+                #firstauthor{
+                    z-index: 10;
+                }
+                #secondauthor{
+                    z-index: 9;
+                }
+                #thirdauthor{
+                    z-index: 8;
+                }
+                #forthauthor{
+                    z-index: 7;
+                }
+                .author:hover{
+                    transform: translateY(-4px);
+                }
+           }
+        }
+    }
+    .r{
+        .colcard{
+            transition: 0.3s;
+            position: relative;
+            img{
+                position: relative;
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                object-position: center;
+                filter: brightness(0.8);
+                border-radius: 50px;
+            }
+            .content{
+                position: absolute;
+                bottom: 40px;
+                left: 50px;
+                font-family: sans-serif;
+                p{
+                    font-weight: bold;
+                }
+                a{
+                    font-size: 13px;
+                    color: white;
+                    text-decoration: none;
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+                button{
+                    font-size: 12px;
+                    border: 1px solid white;
+                    background-color: transparent;
+                    border-radius: 15px;
+                    color: white;
+                    transition: 0.2s;
+                }
+                button:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+            .largecontent{
+                max-width: 440px;
+                p{
+                    font-size: 36px;
+                   
+                }
+            }
+            .smallcontent{
+                max-width: 300px;
+                p{
+                    font-size: 26px;
+                }
+            }
+        }
+        .colcard:hover{
+            transform: translateY(-5px);
+        }
+    }
+    
+   
+}
+.missed{
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3f4851;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    .leftcont{
+        h2{
+            font-size: 68px;
+            font-family: 'EB Garamond', serif;
+            span{
+                
+                font-style: italic;
+            }
+        }
+    }
+    .arrow{
+        display: flex;
+        justify-content: flex-end;
+       .lifestylelink{
+           transition: 0.3s;
+           color: white;
+        i{
+            font-size: 70px;
+        }
+       }
+       .lifestylelink:hover{
+           transform: translateX(5px);
+       }
+    }
+}
